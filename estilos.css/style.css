@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, sans-serif;/*tipo de letra*/
+    margin: 20px;/*margen de la pagina*/
+    line-height: 1.6; /*altura de las lineas de texto*/
+    background-image: url("/img/sc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+h1{
+    text-align: center;/*centra el h1 en eje X*/
+    margin-bottom: 20px;/*borde inferior  entre elementos*/
+}
+
+p{
+    /*margin-right: 4%; coloco margen*/
+    text-align: center;/*centro al eje Y*/
+    margin-bottom: 40px;/*borde inferior  entre elementos*/
+}
+
+.container-platos p{
+    /*margin-right: 4%; coloco margen*/
+    text-align: center;/*centro al eje Y*/
+    margin-bottom: 40px;/*borde inferior  entre elementos*/
+    text-shadow: 5px 5px 5px  rgb(255, 255, 255); /* Sombra negra suave */
+
+}
+.container-platos{
+    display: flex;/*alinea todos los elemento hijos*/
+    justify-content: space-between; /*alinea los elemento en orden,
+    el 1er elem se alinea al comiendo,el 3er elemento se alinea al final del contenedor
+     y el 2do entre el elemetno1 y 3 */
+     gap: 20px; /* Espaciado entre las columnas */ 
+     flex-wrap: wrap; /*Permite que los elementos se ajusten en pantallas pequeñas*/
+}
+
+.container-platos > div{
+    flex: 1; /*Los contenedores compartirán el espacio disponible*/
+    max-width: 300px; /*Tamaño máximo para mantener proporción*/
+    text-align: center;/*centro el textos*/
+    padding: 10px; /*margen de cada contenedor*/
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.8); /*sombreado del margen */
+    border-radius: 10px;/*dordes de cada contenedor*/
+    
+}
+
+.container-platos img{
+    border-radius: 50%;/*bordes de las img 50% = a redondo*/
+    width: 200px; /*ancho de la img*/
+    height: auto; /*con auto se ajusta autmoticamente la altura*/
+}
+
+.container-platos > .mani{
+    background: url("/img/logo1.jpg");
+}
+
+.container-platos > .pique-macho{
+    background: url("/img/cocha.webp");
+}
+
+.container-platos > .fricase{
+    background: url("/img/la_paz.jpg");
+}
+
+
+
+
