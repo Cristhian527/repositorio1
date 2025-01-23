@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;/*tipo de letra*/
     margin: 20px;/*margen de la pagina*/
     line-height: 1.6; /*altura de las lineas de texto*/
-    background-image: url("/img/sc.jpg");
+    background-image: url("/img/sc.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
 } 
